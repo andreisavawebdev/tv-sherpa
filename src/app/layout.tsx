@@ -13,7 +13,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+      <body className="font-sans">
+        <div className="container mx-auto px-4 py-8">{children}</div>
+      </body>
     </html>
   );
 }
