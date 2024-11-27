@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Gradient Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3498DB;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle with gradient -->
+  <circle cx="200" cy="200" r="180" fill="url(#bgGradient)"/>
+  
+  <!-- Mountain silhouettes with more depth -->
+  <path d="M50 250 L150 100 L250 250 Z" fill="#2C3E50" opacity="0.7"/>
+  <path d="M200 250 L300 150 L350 250 Z" fill="#34495E" opacity="0.6"/>
+  
+  <!-- TV screen with perspective and shadow -->
+  <rect x="125" y="170" width="150" height="100" rx="15" ry="15" fill="#ECF0F1" filter="url(#shadow)"/>
+  
+  <!-- Shadow filter -->
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="5" stdDeviation="10" flood-color="#2C3E50" flood-opacity="0.3"/>
+  </filter>
+  
+  <!-- Screen with more dynamic elements -->
+  <rect x="140" y="185" width="120" height="70" fill="#2980B9" rx="10" ry="10"/>
+  <polygon points="140,215 260,215 200,185" fill="#3498DB" opacity="0.8"/>
+  
+  <!-- Stylized Sherpa flag/banner with gradient -->
+  <defs>
+    <linearGradient id="flagGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E74C3C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C0392B;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  <path d="M200 70 L220 100 L180 100 Z" fill="url(#flagGradient)" filter="url(#shadow)"/>
+</svg>
